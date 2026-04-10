@@ -1,0 +1,276 @@
+
+
+/* ─── Body ─────────────────────────────────────────────────────────────── */
+body {
+  font-family: 'Open Sans', Arial, sans-serif !important;
+  background-color: #f9f9f9 !important;
+  color: #333 !important;
+}
+
+/*
+body::after {
+    content: "DRAFT";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 120px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.04);
+    pointer-events: none;
+    z-index: 9999;
+    white-space: nowrap;
+    letter-spacing: 10px;
+}
+
+*/
+
+/* ─── Links ─────────────────────────────────────────────────────────────── */
+a {
+  color: #94a2a4 !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+.panel-tabset .nav-link.active {
+    color: #425b5e !important;
+    border-bottom-color: #425b5e !important;
+}
+
+.small-tabs .panel-tabset .nav-link {
+    font-size: 13px !important;
+}
+
+.small-tabs2 .panel-tabset .nav-link {
+    font-size: 15px !important;
+}
+
+.small-text {
+  font-size: 0.7em;
+  color: grey;
+}
+
+.small-text-right {
+  font-size: 0.7em;
+  color: grey;
+  display: block;
+  text-align: right;
+}
+
+
+/* ─── Title banner ───────────────────────────────────────────────────────── */
+.quarto-title-banner {
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+.quarto-title-meta {
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: #fff;
+}
+
+#title-block-header.quarto-title-block {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  background-color: #fff;
+}
+
+.quarto-title {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  background-color: #0072BC !important;
+  min-height: 60px !important;
+  padding: 5px !important;
+  gap: 8px !important;
+  width: 100% !important;
+}
+
+.quarto-title::before {
+  content: "" !important;
+  display: block !important;
+  background-image: url("images/NEL-Logo-Right-Aligned-Reverse-PNG-resize-b.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  width: 130px !important;
+  height: 50px !important;
+  flex-shrink: 0 !important;
+  align-self: flex-end !important;
+}
+
+.quarto-title h1.title {
+  text-indent: 0 !important;
+  font-size: 30px !important;
+  color: #fff !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+  align-self: flex-start !important;
+}
+
+@media (max-width: 900px) {
+  .quarto-title h1.title {
+    font-size: 20px !important;
+  }
+}
+
+/* ─── Headings ───────────────────────────────────────────────────────────── */
+h1, .h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h2, .h2 {
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: none !important;  /* add this line */
+}
+
+h3, .h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ─── TOC ────────────────────────────────────────────────────────────────── */
+.sidebar nav[role=doc-toc] ul>li>a.active,
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+  border-left: 2px solid #0072BC!important;
+  color: #425b5e !important;
+}
+
+/* ─── Margin around content ──────────────────────────────────────────────── */
+
+#quarto-document-content {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.no-gap figure,
+.no-gap p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+figure.figure-left .figure-caption {
+    text-align: left !important;
+}
+
+/* ─── Tables ─────────────────────────────────────────────────────────────── */
+table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+
+table th,
+table td {
+  border: 1px solid #cdd4d9 !important;
+  padding: 0.5rem !important;
+  text-align: left !important;
+}
+
+table th {
+  background-color: #425b5e !important;
+  color: #fff !important;
+}
+
+.small-table {
+  font-size: 14px; !important;
+  padding: 0.5rem !important;
+}
+
+.large-table td {
+    vertical-align: top !important;
+    font-size: 14px; !important;
+    padding: 0.5rem !important;
+}
+
+.centred-cols th:not(:first-child),
+.centred-cols td:not(:first-child) {
+    text-align: center !important;
+}
+
+.centred-cols td,
+.centred-cols th {
+    padding: 0.5rem 0.5rem !important;
+}
+
+.centred-cols tbody td:nth-child(3) {
+    border-right: 1px solid #999999 !important;
+}
+
+table.centred-cols td:first-child,
+table.centred-cols th:first-child {
+  text-align: center !important;
+}
+
+/* ─── Callouts ───────────────────────────────────────────────────────────── */
+.callout {
+  background-color: #ffffff !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  border-radius: .25rem !important;
+}
+
+.callout-note.callout {
+  border-left-color: #425b5e !important;
+  background-color: #ffffff !important;
+}
+
+.callout.callout-style-simple {
+  padding: .01em .7em;
+}
+
+.callout-caption-container {
+  color: #425b5e !important;
+}
+
+/* ─── Figure captions ────────────────────────────────────────────────────── */
+.figure-caption {
+  color: #373a3c;
+  font-size: 10px;
+}
+
+/* ─── Custom content boxes ───────────────────────────────────────────────── */
+.nhs-border {
+  border: 2px solid #0072BC;
+  border-radius: 4px;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 1em 0;
+}
+
+.text-box {
+  border: 4px solid #0072BC;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  color: black;
+}
+
+.text-box .number {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.text-box .description {
+  font-size: 16px;
+}
+
+.text-box-first {
+  background-color: #009639;
+  color: white;
+}
